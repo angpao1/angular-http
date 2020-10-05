@@ -18,6 +18,7 @@ export class AppComponent {
     //Add 'implements OnInit' to the class.
     this.http.get("http://10.148.0.3:4000/products").subscribe(res => {
       console.log(res)
+      this.title = res.toString()
     })
   }
 }
