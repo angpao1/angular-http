@@ -16,7 +16,7 @@ export class AppComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.http.get("http://35.197.154.104:4000/products").subscribe(res => {
+    this.http.get("http://127.0.0.1:4000/products").subscribe(res => {
       console.log(res)
       this.title = res.toString()
     })
